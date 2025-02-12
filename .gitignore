@@ -1,0 +1,22 @@
+# excel files
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.xlam
+*.xltx
+*.xltm
+*.xla
+*.xll
+*.xlw
+*.xlr
+
+# python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# virtualenv
+venv/
+
