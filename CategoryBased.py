@@ -1,15 +1,15 @@
-# You use if you want to scrape using product name.
+# You use if you want to scrape using Category.
 import requests
 import pandas as pd
 
-query = input("Search Bar (Query): ")
+category = input("Search Bar (Category)")
 num_products = int(input("Enter number of products to get: "))
 
 base_url = "https://jiji.com.et/api_web/v1/listing"
 data_list = []
 
 scraped_count = 0
-next_url = f"{base_url}?query={query}&init_page=true&page=1&webp=false"
+next_url = f"{base_url}?slug={category}&init_page=true&page=1&webp=false"
 
 while scraped_count < num_products and next_url:
     response = requests.get(next_url)
