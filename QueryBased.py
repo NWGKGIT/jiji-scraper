@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-query = input("Search Bar: ")
+query = input("Search Bar (Query): ")
 num_products = int(input("Enter number of products to get: "))
 
 base_url = "https://jiji.com.et/api_web/v1/listing"
